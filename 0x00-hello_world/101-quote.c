@@ -1,9 +1,9 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - print the string in the function
  *
- * this program prints "Programming is like building a multilingual puzzle"
+ * this program prints (Programming is like building a multilingual puzzle)
  * Return: 1
  */
 int main(void)

@@ -3,7 +3,7 @@
 /**
  * main - print the string in the function
  *
- * Return: Always 1 "Programming is like building a multilingual puzzle"
+ * Return: Always 1 (Programming is like building a multilingual puzzle)
  */
 int main(void)
 {

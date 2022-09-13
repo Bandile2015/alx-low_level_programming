@@ -1,19 +1,22 @@
-#include "_putchar.h"
+#include "main.h"
+
 /**
- * main - Write a program that prints _putchar, followed by a new line
+ * main - codes for Alx students.
 *
- * Return: Always 0 (The program should return 0)
+* program that prints _putchar, followed by a new line
+* Return: always 0
  */
 int main(void)
 {
-	char *sh = "_putchar";
+	char s[] = "_putchar";
+	int i = 0;
 
-	while (*sh)
+		while (s[i] != '\0')
 	{
-		_putchar(*sh);
-		sh++;
+		_putchar(s[i]);
+			i++;
 	}
-	_putchar('\n');
+	_putchar(10);
 
 	return (0);
 }

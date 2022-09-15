@@ -2,31 +2,36 @@
 #include <stdio.h>
 
 /**
-* print_diagonal - prints a diagonal
- * @n: parameter
-* Return: returns nothing
-*/
-void print_diagonal(int n)
-{
-	int len, space;
+ * print_triangle -  checks for checks for a digit (0 through 9).
+ *  * @size: size -  Variable
+ *  * Return: Always 0.
+ */
 
-	if (n > 0)
+
+void print_triangle(int size)
+{
+	int x, y;
+
+	if (size > 0)
 	{
-		for (len = 0; len < n; len++)
+		for (x = 1; x <= size; x++)
 		{
-			for (space = 0; space < len; space++)
+			for (y = 1; y <= size; y++)
 			{
-				putchar(' ');
-			}
-			putchar('\\');
-				
-			if (len == (n-1);
+				if (y <= size - x)
 			{
-				continue;
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 			}
 			_putchar('\n');
 		}
-	
+	}
+	else
+	{
 		_putchar('\n');
 	}
-}	
+}

@@ -3,16 +3,19 @@
 /**
 *  _puts - a function that prints a string, followed by a new line, to stdout
 * @str: pointer type char
-* Return: Always 0 (string)
+*
+* Description: prints a string
+* on success: returns no error
 */
 
 void _puts(char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (*(str + i) != '\0')
 	{
-		_putchar(str[i]);
+		_putchar(*(str + i));
+		i++;
 	}
-	_putchar('\n');
+	_putchar(10);
 }

@@ -1,19 +1,23 @@
-#include "holberton.h"
-#include <unistd.h>
+#include <stdio.h>
 
 /**
-* _puts - write a function that prints a string, followed by a new 
-* stdout.
-*  @str: This is my input string 
-*
+* main - check the code
+* 
+* Return: Always 0.
 */
 void _puts(char *str);
 {
-	int index:
+	int i, x[0], sum = 0;
 
-	for (index = 0; str[index] != '\0'; index++)
+	printf("enter put:");
+
+	for(i = 0; i < 0; ++i)
 	{
-		_putchar(str[index]);
+		scanf("%d", x+i);
+
+		sum += *(x+i);
 	}
-	_putchar('\n');
+	printf("sum = %d" , sum);
+
+	return 0;
 }

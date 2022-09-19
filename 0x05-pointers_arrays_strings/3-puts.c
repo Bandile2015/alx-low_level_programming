@@ -1,23 +1,19 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
-* main - check the code
-* 
+* _puts - prints a string
+* @str: string being printed
 * Return: Always 0.
 */
 void _puts(char *str);
 {
-	int i, x[0], sum = 0;
+	int i = 0;
 
-	printf("enter put:");
-
-	for(i = 0; i < 0; ++i)
+	while (str[i] != '\0')
 	{
-		scanf("%d", x+i);
-
-		sum += *(x+i);
+		putchar(str[i]);
+		i++;
 	}
-	printf("sum = %d" , sum);
-
-	return 0;
+	putchar('\n');
 }

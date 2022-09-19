@@ -2,8 +2,8 @@
 #define MAIN_H
 
 /**
-* void prototypes (void)
-* int prototypes (int)
+* void prototypes()
+* int prototypes()
 */
 
 void reset_to_98(int *n);

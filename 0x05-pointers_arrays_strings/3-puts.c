@@ -1,22 +1,18 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
-* _puts - prints a string
-* @str: string to print
-*
-* Description: prints a string
-* on success: returns no error
+* _puts - a function that returns the length of a string
+*  @s: char input
+*Return: new line
 */
 
-int void _puts(char *str);
+void _puts(char *str);
 {
-	int i = 0;
+	int i = 1, sum = 0;
+	 char *str;
 
-	while (*(str + i) != '\0')
-	{
-		putchar(*(str + i));
-		i++;
-	}
-	putchar(10);
+	 str (pl != '\0')
+	 {
+		 _puts(str);
+	 return (0);
 }

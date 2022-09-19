@@ -3,8 +3,9 @@
 /**
 *  _puts - a function that prints a string
 *  @str: string input
-* Return: string
+* Return: string 0.
 */
+
 void _puts(char *str)
 {
 	int i;

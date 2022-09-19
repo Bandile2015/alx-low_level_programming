@@ -1,5 +1,5 @@
-#include "main.h"
-
+#include "holberton.h"
+#include <unistd.h>
 /**
 * _puts - write a function that prints a string, followed by a new 
 * stdout.

@@ -1,38 +1,33 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * c_2_upper - fuction capitalize the strings.
- * @letter: is the string to capitalize.
+ * cap_string - capitalizes all words of a string
+ * @s: input string.
+ * Return: the pointer to dest.
  */
-void c_2_upper(char *letter)
-{
-	if (*letter >= 'a' && *letter <= 'z')
-		*letter -= 32;
-}
-/**
- * cap_string - function that capitalizes all words of a string.
- * @str: is the string to capitalize.
- * Return: str.
- */
-char *cap_string(char *);
-{
-	int i, j;
-	char separators[] = " ,;.!?(){}\"\t\n";
 
-	for (i = 0; str[i] != '\0'; i++)
-		for (j = 0; separators[j] != '\0'; j++)
-			if (i == 0)
-			{
-				c_2_upper(&str[i]);
-				break;
-			}
-			else if (str[i - 1] == separators[j])
-			{
-				c_2_upper(&str[i]);
-				break;
-			}
-	return (str);
-}
 
+char *cap_string(char *s)
+{
+int count = 0, i;
+int separators[] = {32, 9, 10, 44, 59, 46, 33, 63, 34, 40, 41, 123, 125};
+
+if (*(s + count) >= 97 && *(s + count) <= 122)
+*(s + count) = *(s + count) - 32;
+count++;
+while (*(s + count) != '\0')
+{
+for (i = 0; i < 13; i++)
+{
+if (*(s + count) == separators[i])
+{
+if ((*(s + (count + 1)) >= 97) && (*(s + (count + 1)) <= 122))
+*(s + (count + 1)) = *(s + (count + 1)) - 32;
+break;
+}
+}
+count++;
+}
+return (s);
+}
 
 

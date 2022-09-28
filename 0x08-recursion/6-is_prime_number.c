@@ -7,7 +7,7 @@
  * Return: return 1 or 0
  */
 
-int is_prime_number(int num)
+int evaluate_num(int num, int iterator)
 {
 
 if (iterator == num - 1)
